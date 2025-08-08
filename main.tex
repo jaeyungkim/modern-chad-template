@@ -1,36 +1,38 @@
-\documentclass{modern-chad}
-
-% Packages commonly used in academic papers
-\usepackage{amsmath,amsfonts,amssymb}
-\usepackage{graphicx}
-\usepackage{natbib}
-
-% Title and author information
-\title{Sample Paper Using the Modernized Chad Jones Template}
-\author{Your Name Here}
-\date{\today}
+\documentclass[12pt,twoside]{modern-chad}
+\usepackage{chadstyle}
 
 \begin{document}
+\bibliographystyle{aernobold}
 
+\begin{spacing}{0.9}
+\begin{titlepage}
+
+\title{The Costs of Economic Growth}
+\runningheads{Charles I. Jones}{short title}
+
+\author{\large Charles I. Jones\thanks{People to thank...}\\ {U.C. Berkeley and NBER}
+   }
+
+\date{\small \today\ -- Version 0.4\\ {\it Preliminary}}
 \maketitle
+\thispagestyle{empty}
+
+\vspace{-0.3in}
 
 \begin{abstract}
-This is a sample abstract for the modernized Chad Jones LaTeX template. Replace this text with your paper's abstract.
+   Abstract goes here...
 \end{abstract}
 
+\end{titlepage}
+\end{spacing}
+
 \section{Introduction}
-This document illustrates the basic structure of a paper using the modernized Chad Jones template. Replace this text with your introduction.
 
-\section{Methods}
-Describe your methodology here. You can include equations, figures, and tables using standard LaTeX commands.
+The paper...
 
-\section{Results}
-Present the results of your study here. Use figures and tables where appropriate.
-
-\section{Conclusion}
-Summarize your findings and discuss the implications of your results.
-
-\bibliographystyle{apalike}
-\bibliography{references}
+{\small
+% Put your bibliography file here
+%\bibliography{Growth.bib}
+}
 
 \end{document}
